@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #002f55;
+  background: linear-gradient(0deg, #002f55 0%, #0050ac 100%);
+  color: #a1a1a1;
+  padding-top: 70px;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Хедер */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #002f55;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.header .logo img {
+  height: 90px;
+}
+
+.header .nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header .nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.header .nav a:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+  border-radius: 5px;
+}
+
+/* Секция Welcome */
+.welcome {
+  text-align: center;
+  padding: 50px;
+}
+
+.welcome h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  padding-bottom: 100px;
+}
+
+.welcome-immage {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  box-shadow: 0px 0px 9px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.welcome-immage img {
+  margin-right: 20px; /* Отступ между изображением и текстом */
+}
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transform: scale(1.05);
+  border-radius: 5px;
+}
+
+/* Центрирование текста */
+.welcome-text h1, 
+.welcome-text p {
+  margin: 10px auto;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+/* Блок директора */
+.staff-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.staff-info img.staff-photo {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.staff-info p.staff-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.director {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.staff-member {
+  background-color: #00000025;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  width: 250px;
+  border: 1px solid #000000;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  order: 50;
+}
+
+.staff-member:hover {
+  transform: scale(1.05);
+}
+
+.staff-photo {
+  width: 180px;
+  height: auto;
+  border-radius: 80%;
+  margin-bottom: 10px;
+}
+
+.staff-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+}
+
+.phone-button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.phone-button:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+  color: white;
+}
+
+.phone-number {
+  margin-top: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.footer {
+  margin-top: 200px;
+  background-color: black;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    height: 350px;
+  }
+
+  .header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .header .nav a {
+    display: block;
+    width: 90%;
+    max-width: 280px;
+    padding: 8px;
+    text-align: center;
+    background: #0d47a1;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+
+  .welcome {
+    padding-top: 250px;
+  }
+
+  .welcome-immage {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .welcome-immage img {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .welcome-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .welcome-text p {
+    font-size: 1rem;
+  }
+
+  .staff {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .staff-member {
+    max-width: 95%;
+  }
+  
+  .staff-photo {
+    width: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding-top: 200px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    height: 300px;
+  }
+
+  .header .nav {
+    gap: 6px;
+    margin-top: 6px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .header .nav a {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+
+  .staff-member {
+    max-width: 100%;
+  }
+
+  .welcome {
+    padding-top: 200px;
+  }
+}
+
+
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#map {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*achievements*/
+
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 30px;
+}
+
+.achievement-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: scale(1.05);
+}
+
+.achievement-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+.achievement-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.achievement-content a {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0050ac;
+  text-decoration: none;
+}
+
+.achievement-content p {
+  font-size: 1em;
+  color: #333;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .achievements {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/* Placeholder for image */
+.achievements-img img {
+  width: 400px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.footer-logo{
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer a{
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Прелоадер */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #002f55;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 10000;
+  transition: opacity 0.5s ease;
+}
+
+.preloader-title {
+  font-size: 5rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.preloader-text {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Анимация появления текста */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Основной контент скрыт при загрузке */
+.hidden {
+  display: none !important;
+}
+
+#content {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}

@@ -13,13 +13,14 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background: #002f55;
-  background: linear-gradient(0deg, #002f55 0%, #0050ac 100%);
-  color: #a1a1a1;
+  background: linear-gradient(0deg, #004279 0%, #087bff 100%);
+  color: #ececec;
   padding-top: 70px;
   min-height: 100vh;
 }
 
 .container {
+  
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -67,9 +68,33 @@ body {
 }
 
 /* Секция Welcome */
+
+
 .welcome {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(-45deg, #004279, #087bff, #004279, #087bff);
+  background-size: 400% 400%;
+  animation: gradientWave 6s ease infinite;
+  color: #ececec;
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 50px;
+  border-bottom: dashed #00205a 0.5px;
+}
+
+@keyframes gradientWave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .welcome h1 {
@@ -475,7 +500,6 @@ body {
   animation: fadeIn 2s ease-in-out;
 }
 
-/* Анимация появления текста */
 @keyframes fadeIn {
   from {
     opacity: 0;

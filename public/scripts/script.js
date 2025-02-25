@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, loadingDuration);
 });
 
-// Функция карты
 function initMap() {
     var map = new ymaps.Map("map", {
         center: [43.247949, 76.947960],

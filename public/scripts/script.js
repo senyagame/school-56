@@ -50,3 +50,18 @@ function togglePhone(button) {
       }, 300);
     }
   }
+document.addEventListener ("DOMContentLoaded",
+function () {
+	const kundelikLink = document.querySelector('.nav a[href="https://kundelik.kz"]');
+  if (kundelikLink)  {
+    kundelikLink.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const userConfirmed = confirm("вы уверены, что хотите перейти на сайт kundelik.kz?\n\n⚠ Это закроет текущую страницу!");
+
+      if (userConfirmed) {
+        window.open(kundelikLink.href,"_blank");
+      }
+    });
+    }
+  });
